@@ -15,6 +15,8 @@
             </p>
         </div>
     </section>
+
+    <?php include 'inc/footer.blade.php'; ?>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ $medGold: #d6a319;
 
 // Font
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap");
-@import 'functions.scss';
+@import "functions.scss";
 
 // Font Weights
 $light: 100;
@@ -17,51 +17,51 @@ $normal: 400;
 $bold: 700;
 
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h1,
 .h1 {
-    font-size: rem(70);
-    letter-spacing: rem(10)
+	font-size: rem(70);
+	letter-spacing: rem(10);
 }
 
 h2,
 .h2 {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 h3,
 .h3 {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 h4,
 .h4 {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 h5,
 .h5 {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 h6,
 .h6 {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 li,
 .li {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 button,
 .btn {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }
 
 p,
 .p {
-    letter-spacing: rem(200);
+	letter-spacing: rem(2);
 }

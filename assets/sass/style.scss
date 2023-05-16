@@ -1,3 +1,31 @@
-@import 'variables';
-@import 'landing';
-@import 'navigation';
+@import "variables";
+@import "landing";
+@import "navigation";
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+	margin: 0;
+}
+
+section {
+	padding: 60px 0;
+	overflow: hidden;
+}

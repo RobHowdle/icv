@@ -2,5 +2,20 @@ $base-font-size: 16px;
 
 // convert pixels to rem
 @function rem($value) {
-    @return calc($value / 16) + rem;
+	@return calc($value / 16) + rem;
+}
+
+@mixin btn-nav-link($color) {
+	width: fit-content;
+	color: $color;
+	text-underline-offset: 0.5rem;
+	text-decoration-color: transparent;
+	text-decoration-thickness: 1px;
+	transition-property: text-decoration-color;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+
+	&:hover {
+		text-decoration-color: $color;
+	}
 }
