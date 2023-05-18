@@ -1,10 +1,9 @@
-<button type="button" class="mobile-nav-toggle">
-    <i class="fa-solid fa-bars"></i>
-</button>
-<header class="header">
+<div class="header">
+    <div class="overlay"></div>
     <div class="profile">
         <img src="assets/img/profile-img.jpeg" alt="Portrait Image of Me">
-        <h3 class="h1">Robert Howdle</h3>
+        <h1>Robert Howdle</h1>
+        <h2>Developer</h2>
         <div class="social-links">
             <a href="tel:07305988990" aria-label="Call me at 07305988990">
                 <i class="fa-solid fa-phone"></i>
@@ -21,35 +20,35 @@
     <nav class="nav-menu">
         <ul>
             <li>
-                <a class="btn" href="#home" aria-label="Link to the home section">
+                <a id="sec-1" class="btn home" href="#home" aria-label="Link to the home section">
                     <i class="fa-solid fa-house"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a class="btn" href="#about" aria-label="Link to the about section">
+                <a id="sec-2" class="btn about" href="#about" aria-label="Link to the about section">
                     <i class="fa-solid fa-user"></i>
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a class="btn" href="#portfolio" aria-label="Link to the portfolio section">
+                <a id="sec-3" clas s="btn portfolio" href="#portfolio" aria-label="Link to the portfolio section">
                     <i class="fa-solid fa-file"></i>
                     <span>Portfolio</span>
                 </a>
             </li>
             <li>
-                <a class="btn" href="#outside" aria-label="Link to the outside of work section">
+                <a id="sec-4" class="btn outside" href="#outside" aria-label="Link to the outside of work section">
                     <i class="fa-solid fa-person-hiking"></i>
                     <span>Outside of Work</span>
                 </a>
             </li>
             <li>
-                <a class="btn" href="#personal-achievements">
+                <a id="sec-5" class="btn achievements" href="#achievements">
                     <i class="fa-solid fa-star"></i><span>Personal Achievements</span>
                 </a>
             </li>
         </ul>
     </nav>
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-</header>
+</div>

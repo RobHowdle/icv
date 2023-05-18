@@ -90,6 +90,10 @@
 	&--pi-2 {
 		padding-inline: 2rem;
 	}
+
+	&--pi-4 {
+		padding-inline: 4rem;
+	}
 }
 
 .section-title {
@@ -179,6 +183,37 @@ p {
 			margin-top: 2rem;
 		}
 	}
+
+	.col-image--top {
+		object-position: start;
+	}
+
+	@supports not (aspect-ratio: 1/1) {
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+			padding-top: calc((300 / 500) * 100%);
+		}
+
+		.col-image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			inset: 0;
+			object-fit: cover;
+		}
+	}
+
+	@supports (aspect-ratio: 1/1) {
+		.col-image {
+			aspect-ratio: 500/300;
+			height: auto;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
 }
 
 .h6 {
@@ -219,5 +254,22 @@ p {
 
 	li span {
 		font-weight: 400;
+	}
+}
+
+.activities-block {
+	margin-top: 3rem;
+
+	.h5 {
+		font-weight: 500;
+	}
+
+	p {
+		padding-block: 1rem;
+	}
+
+	.col-left,
+	.col-right {
+		align-self: center;
 	}
 }

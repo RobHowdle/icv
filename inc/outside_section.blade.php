@@ -1,32 +1,120 @@
-<section id="out-of-work" data-link="outside" class="single-section">
-    <h1>Out Of Work Title</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis urna vitae turpis
-        placerat
-        varius. Pellentesque rutrum massa malesuada velit posuere, vitae placerat tellus hendrerit.
-        Quisque non
-        purus purus. Vivamus euismod odio erat, sit amet finibus dui posuere placerat. Cras mollis, odio
-        sagittis sollicitudin dignissim, libero augue consectetur orci, sed egestas orci elit sit amet
-        lacus.
-        Aliquam venenatis, purus sit amet accumsan dictum, diam nisl posuere justo, id semper massa mi
-        in leo.
-        Proin est ligula, malesuada quis mi eget, placerat lobortis orci. Suspendisse quis dictum est.
-        Sed
-        scelerisque rhoncus metus, tempus ornare nunc scelerisque ac. Vivamus et dui tellus. Praesent ac
-        molestie dui. Phasellus eu justo dolor.
+<section id="out-of-work" data-link="outside" class="single-section single-section--pi-2">
+    <div class="inner-wrapper--1680">
+        <h6 class="h3 section-title">Outside of Work</h6>
+        <p>When I’m not at work, I enjoy keeping busy. I have a strong passion for learning new things, which drives me
+            to make the most of my time. I actively engage in various communities, both online and offline, and embrace
+            spontaneity. Through these activities and communities, I have accomplished several achievements that I take
+            great pride in.
+        </p>
 
-        Nulla dictum purus non sem fringilla vestibulum. Curabitur a dui eu nulla dignissim congue.
-        Integer quis
-        pulvinar ipsum. Etiam vehicula libero a dui pharetra, sed ultricies nunc faucibus. Vestibulum
-        convallis
-        risus id nibh tincidunt, vitae vehicula magna malesuada. Duis volutpat tempus libero, et congue
-        est
-        volutpat id. Morbi ac ante ac erat euismod semper. Praesent eu enim eu mauris rhoncus gravida in
-        non
-        augue. Proin arcu nisl, condimentum et dui sed, laoreet congue risus. Donec eget scelerisque mi.
-        Donec
-        nulla eros, ultricies eget lectus at, tempus auctor massa. Sed aliquet, lorem in rhoncus
-        sollicitudin,
-        dolor neque pulvinar nunc, sed interdum erat velit id orci. Sed vel varius tortor. Vivamus et
-        eros sed
-        sem pretium euismod at sed velit. Quisque luctus rutrum turpis ac faucibus.</p>
+        <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="left-col">
+                <h6 class="h5">Droid Building</h6>
+                <p>In 2011, I stumbled upon the Droid Building Community, a global gathering of Star Wars fans who
+                    collaborate to construct replica droids from the Star Wars Universe. Given my preexisting
+                    fascination
+                    electronics, building and a deep love for Star Wars, I embarked on my journey within this community.
+                    Over time, I have contributed to its growth by developing online tools like a Parts Checklist and
+                    Instruction Guides aiding new builders in finding their footing within the vast community.
+                    Additionally,
+                    I established a dedicated Discord Server and organised round-the-clock Zoom calls during the
+                    pandemic.
+                </p>
+            </div>
+            <div class="right-col">
+                <img class="col-image" src="assets/img/achievements/r2uk2019.jpeg"
+                    alt="Droid Builders Gathering Group Photo - R2UK 2019">
+            </div>
+        </div>
+
+        <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="col-left">
+                <img class="col-image" src="assets/img/achievements/rob_music.png"
+                    alt="A picture of me performing with an old band at The Forum Music Center">
+            </div>
+            <div class="col-right">
+                <h6 class="h5">Music</h6>
+                <p>
+                    I have been involved in music since a very young age, playing a variety of instruments including
+                    guitar,
+                    drums and bass. Over the years, I have been part of several bands. primarily focusing on the Rock/
+                    Metal
+                    genres, however I draw inspiration from a diverse range of musical styles when creating my own
+                    compositions.My musical journey has taken me to various recording studios, where I have had the
+                    opportunity to record. Additionally, I have performed at notable venues like The Forum Music Center
+                    in
+                    Darlington and the O2 Academy in Birmingham which were unforgettable experiences. My bands have also
+                    garnered radio airplay, achieved finalist places within local talent shows and produced music
+                    videos. I
+                    am in the process of recording my first solo album, which comprises entirely of original songs.
+                </p>
+            </div>
+        </div>
+
+        <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="col-left">
+                <h6 class="h5">Personal Projects</h6>
+                <p>
+                    I have a passion for expanding my knowledge both within and outside of work. I enjoy engaging in
+                    diverse creative projects, ranging from craft endeavours to coding ventures. For instance, I have
+                    turned a 3D printed model of a prop from the TV show ‘Supernatural’ and creating a custom case
+                    comprising of a hand carved base covered in velvet as well as stained wood and hand burnt symbols
+                    unique to the show. In terms of coding projects, I encountered challenges in the past when searching
+                    for suitable band members. While numerous musician finder websites exist, I took it upon myself to
+                    create my own solution. I am developing a forum-style application that allows individuals or bands
+                    to advertise their musical needs or offerings, incorporating paid subscription tiers for enhanced
+                    functionality and features.
+                </p>
+            </div>
+            <div class="col-right">
+                <img class="col-image" src="assets/img/achievements/projects.png"
+                    alt="A picture of me performing with an old band at The Forum Music Center">
+            </div>
+        </div>
+
+        <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="col-left">
+                <img class="col-image" src="assets/img/achievements/charity.png"
+                    alt="A picture of me performing with an old band at The Forum Music Center">
+            </div>
+            <div class="col-right">
+                <h6 class="h5">Charity Work</h6>
+                <p>
+                    I derive great satisfaction from helping those less fortunate than myself. Over the years, I have
+                    organised numerous charity events with the help of various communities I belong to, as well as
+                    through my music. All the money raised during these goes went directly to the intended causes.
+                    One notable instance occurred in December 2018 when a family close to my childhood
+                    neighbourhood experienced a devastating house fire. Tragically, one of their young children lost
+                    their life, and the family lost not only the child but all of their possessions. Wanting to lend a
+                    hand, I hastily organise a benefit concert, reaching out to as many bands as possible. The
+                    atmosphere on the night was indescribable as musicians from diverse backgrounds came together with a
+                    single goal: to raise as much money as possible to help this family. Despite the event taking place
+                    days before Christmas, we managed to collect over £400, which was remarkable. Alongside Father
+                    Christmas and his elves, I personally visited the family to deliver the funds, accompanied by a
+                    collection of gifts generously donated by the community. Whilst I know that nothing can fully heal
+                    the wounds caused by these tragic events, the knowledge that I played a part in bringing some relief
+                    and happiness to these individuals, even if only momentarily, makes it all worthwhile.
+                </p>
+            </div>
+        </div>
+        <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="col-left">
+                <h6 class="h5">Exploring</h6>
+                <p>
+                    The COVID-19 pandemic sparked a newfound appreciate for the outdoors within me. Whenever the
+                    opportunity arises, I cherish the chance to venture outside and immerse myself in nature. The solace
+                    I find amidst the trees, hill, historical sites and the wonders of the natural world provide respite
+                    from a life intertwined with technology. Whether embarking on late-night drives, day trips or
+                    embarking on spontaneous journeys to uncharted destinations on the map, I am captivated by the
+                    allure of the great outdoors.The act of venturing out and exploring the world holds immense
+                    therapeutic value for me. It allows me to unwind, clear my mind, connect with nature and discover
+                    the boundless wonders that our planet has to offer which are often overlooked by so many.
+                </p>
+            </div>
+            <div class="col-right">
+                <img class="col-image" src="assets/img/achievements/exploring.png"
+                    alt="A picture of me performing with an old band at The Forum Music Center">
+            </div>
+        </div>
+    </div>
 </section>
