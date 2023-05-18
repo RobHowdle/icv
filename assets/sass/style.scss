@@ -1,6 +1,13 @@
 @import "variables";
 @import "landing";
 @import "navigation";
+@import "sections";
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+}
 
 .h1,
 .h2,
@@ -25,7 +32,38 @@ ul {
 	margin: 0;
 }
 
-section {
-	padding: 60px 0;
-	overflow: hidden;
+.inner-wrapper {
+	&--1680 {
+		max-width: rem(1680);
+		margin-inline: auto;
+		padding-block: 2rem;
+
+		&-lg {
+			padding-block: 4rem;
+		}
+	}
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 0.2fr 0.8fr;
+
+	.header {
+		grid-column: 1/2;
+	}
+
+	.container {
+		grid-column: 2/3;
+		overflow: auto;
+		min-height: 100%;
+		height: 100vh;
+	}
+}
+
+#home {
+	padding-bottom: 4rem;
+}
+
+.lg-bg {
+	background-color: $lightGrey;
 }

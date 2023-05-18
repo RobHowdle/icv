@@ -1,13 +1,12 @@
 .header {
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 25%;
-	z-index: 9997;
-	padding-inline: 1rem;
-	background: $darkGrey;
-	overflow-y: auto;
+	align-self: start;
+	background: url("../img/background.jpg") rgba(4, 11, 20, 0.7);
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
 }
 
 .header .profile {
@@ -28,10 +27,17 @@
 		border-radius: 100%;
 	}
 
-	h3 {
+	h1 {
 		font-size: rem(24);
 		margin-bottom: 1rem;
 		color: $white;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: rem(22);
+		margin-bottom: 1rem;
+		color: $lightGrey;
 		text-align: center;
 	}
 
@@ -70,11 +76,11 @@ nav.nav-menu {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 1rem;
 		list-style-type: none;
 
-		li:active {
-			color: $paleBlue;
+		li {
+			padding-block: 1rem;
 		}
 	}
 
@@ -83,6 +89,10 @@ nav.nav-menu {
 		gap: 2rem;
 
 		@include btn-nav-link($lightGrey);
+
+		&.active {
+			@include btn-nav-link($paleBlue);
+		}
 	}
 }
 
