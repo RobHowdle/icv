@@ -88,6 +88,9 @@ nav.nav-menu {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
+		transition-property: color;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
 
 		@include btn-nav-link($lightGrey);
 

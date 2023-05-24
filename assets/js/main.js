@@ -19,6 +19,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelector(".header .nav-menu ul li a").click(function (l) {
+	console.log("active");
 	l.toggleClass("active");
 });
 
@@ -43,25 +44,25 @@ const landingSlider = new Swiper(".landing-slider", {
 });
 
 // Portfolio Load More
-const loadmore = document.querySelector("#loadmore");
-let currentItems = 3;
-loadmore.addEventListener("click", (e) => {
-	const elementList = [
-		...document.querySelectorAll(".work-card-wrapper .card"),
-	];
-	for (let i = currentItems; i < currentItems + 3; i++) {
-		if (elementList[i]) {
-			elementList[i].style.visibility = "visible";
-			elementList[i].style.opacity = "1";
-			elementList[i].style.height = "600px";
-		}
-	}
+// const loadmore = document.querySelector("#loadmore");
+// let currentItems = 3;
+// loadmore.addEventListener("click", (e) => {
+// 	const elementList = [
+// 		...document.querySelectorAll(".work-card-wrapper .card"),
+// 	];
+// 	for (let i = currentItems; i < currentItems + 3; i++) {
+// 		if (elementList[i]) {
+// 			elementList[i].style.visibility = "visible";
+// 			elementList[i].style.opacity = "1";
+// 			elementList[i].style.height = "600px";
+// 		}
+// 	}
 
-	currentItems += 3;
+// 	currentItems += 3;
 
-	if (currentItems >= elementList.length) {
-		event.target.style.visibility = "hidden";
-		event.target.style.opacity = "0";
-		event.target.style.height = "0px";
-	}
-});
+// 	if (currentItems >= elementList.length) {
+// 		event.target.style.visibility = "hidden";
+// 		event.target.style.opacity = "0";
+// 		event.target.style.height = "0px";
+// 	}
+// });

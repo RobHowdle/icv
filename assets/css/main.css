@@ -197,12 +197,15 @@ nav.nav-menu a {
   display: flex;
   align-items: center;
   gap: 2rem;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
   width: fit-content;
   color: #e4f0ff;
   text-underline-offset: 0.5rem;
   text-decoration-color: transparent;
   text-decoration-thickness: 1px;
-  transition-property: text-decoration-color;
+  transition-property: text-decoration-color, color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -215,7 +218,7 @@ nav.nav-menu a.active {
   text-underline-offset: 0.5rem;
   text-decoration-color: transparent;
   text-decoration-thickness: 1px;
-  transition-property: text-decoration-color;
+  transition-property: text-decoration-color, color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -528,14 +531,12 @@ p {
   grid-gap: 2rem;
 }
 .work-card-wrapper .card {
-  height: 0;
+  height: 600px;
   width: auto;
   cursor: pointer;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   display: grid;
-  visibility: hidden;
-  opacity: 0;
   grid-template-rows: repeat(3, 1fr);
   transition-property: visibility, height, opacity;
   transition-duration: 300ms;
@@ -646,7 +647,7 @@ p {
   width: fit-content;
   color: #e4f0ff;
   background-color: #173b6c;
-  padding: 6px 30px;
+  padding: 10px 30px;
   transition-property: color, background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
@@ -659,6 +660,10 @@ p {
 .work-card-wrapper button:hover {
   background-color: #fff;
   color: #173b6c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

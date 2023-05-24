@@ -43,12 +43,6 @@
                     <span>Outside of Work</span>
                 </a>
             </li>
-            <li>
-                <a class="btn achievements" href="#achievements" aria-label="Link to the outside of work section">
-                    <i class="fa-solid fa-star"></i>
-                    <span>Personal Achievements</span>
-                </a>
-            </li>
         </ul>
     </nav>
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>

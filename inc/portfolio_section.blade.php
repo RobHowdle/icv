@@ -1,6 +1,6 @@
 <section id="portfolio" data-link="portfolio" class="single-section single-section--pi-2">
     <div class="inner-wrapper--1680">
-        <h5 class="h3 section-title">My Work</h5>
+        <h5 class="h3 section-title">Portfolio</h5>
         <p>
             I consider myself fortunate to have had the opportunity to collaborate with wonderful clients
             throughout my career. Over the years, I have engaged in diverse projects, encompassing the
@@ -168,6 +168,65 @@
                 </div>
             </div>
 
+            <div class="card">
+                <div class="overlay"></div>
+                <img src="assets/img/portfolio/cards/jrb.jpg" class="card-image" alt="JRB Charted Surveyors">
+                <h5 class="h6 project-title">JRB Charted Surveyors</h5>
+                <div class="content">
+                    <p>While working on this website project at Discovery Design, I encountered a few changed, which led
+                        me to discover and utilise Gravity Forms. Built within the Wordpress CMS and incorporating
+                        Custom Post Types, this website featured a more tailored SASS styling compared to previous
+                        projects. Notably, the website incorporated PDF Generation functionality based on user-submitted
+                        forms. Being the first within my company to implement these kind of features
+                        using our new structure, I embraced the challenge of learning and successfully achieved their
+                        implementation.</p>
+                </div>
+                <div class="links">
+                    <a class="button" href="https://jrbsurveyors.co.uk/" target="_blank">View
+                        <span class="fa-solid fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="overlay"></div>
+                <img src="assets/img/portfolio/cards/vanfit.jpeg" class="card-image" alt="Vanfit Solutions">
+                <h5 class="h6 project-title">Vanfit Solutions</h5>
+                <div class="content">
+                    <p>During my tenure at Discovery Design, I developer another website that utilises the Wordpress CMS
+                        and incorporates Woocommerce. This particular project involved a client who desired both
+                        standard product sales functionality and the option for customers to customise certain product.
+                        To meet this requirement, we implemented a configurator feature that enables customers to select
+                        a specific service and customise it according to their needs. The configurator dynamically
+                        generates an instant price quote based on the customer’s selections. I integrated various
+                        payment methods, including Klarna, to offer a seamless checkout experience.</p>
+                </div>
+                <div class="links">
+                    <a class="button" href="https://vanfitsolutions.co.uk/" target="_blank">View
+                        <span class="fa-solid fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="overlay"></div>
+                <img src="assets/img/portfolio/cards/paradise.jpeg" class="card-image" alt="Paradise School, Goa">
+                <h5 class="h6 project-title">Paradise School, Goa</h5>
+                <div class="content">
+                    <p>Working on the Paradise School project at Discovery Design was a highly enjoyable experience. The
+                        project demanded a balance between a fun and professional design, allowing me the creative
+                        freedom to make it truly exceptional. This project held a significant milestone for me as it was
+                        the first time I completed a project for a client in another country. Overcoming the challenges
+                        of time differences and very bespoke requirements, I strived to effectively communicate and meet
+                        the clients needs. The website boasts a range of notable features including custom image
+                        sliders, section animations and various custom post types.</p>
+                </div>
+                <div class="links">
+                    <a class="button" href="https://paradiseschoolgoa.com/" target="_blank">View
+                        <span class="fa-solid fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
             <button id="loadmore">Load More</button>
         </div>
     </div>
