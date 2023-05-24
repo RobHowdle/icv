@@ -143,6 +143,7 @@ p {
 
 	.left-col {
 		grid-column: 1/2;
+		place-self: center;
 
 		@supports not (aspect-ratio: 1/1) {
 			position: relative;
@@ -178,6 +179,7 @@ p {
 
 	.right-col {
 		grid-column: 2/3;
+		place-self: center;
 
 		.section-sub-title {
 			margin-top: 2rem;
@@ -241,19 +243,15 @@ p {
 	list-style-type: none;
 	padding-left: 0;
 
-	li:before {
-		display: inline-block;
-		text-rendering: auto;
-		-webkit-font-smoothing: antialiased;
-		font: var(--fa-font-solid);
-		content: "\f054";
-		font-weight: 600;
-		color: $lightBlue;
-		padding-right: 0.5rem;
-	}
+	li {
+		svg {
+			padding-right: 0.5rem;
+			color: $lightBlue;
+		}
 
-	li span {
-		font-weight: 400;
+		span {
+			font-weight: 400;
+		}
 	}
 }
 
@@ -271,5 +269,141 @@ p {
 	.col-left,
 	.col-right {
 		align-self: center;
+	}
+}
+
+.work-card-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+
+	.card {
+		height: 600px;
+		width: auto;
+		cursor: pointer;
+		box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+		text-decoration: none;
+		display: none;
+		grid-template-rows: repeat(3, 1fr);
+
+		.overlay {
+			grid-row: 1/-1;
+			grid-column: 1/-1;
+			background-color: $lightBlue;
+			height: 0;
+			width: 100%;
+			transition-property: height, opacity;
+			transition-duration: 200ms;
+			transition-timing-function: ease-in-out;
+			z-index: 1;
+			opacity: 0;
+		}
+
+		.card-image {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			opacity: 0.75;
+			grid-row: 1/-1;
+			grid-column: 1/-1;
+		}
+
+		.h6 {
+			grid-column: 1/-1;
+			grid-row: 3/4;
+			align-self: flex-end;
+			text-transform: uppercase;
+			color: $lightGrey;
+			z-index: 2;
+			margin-bottom: 1rem;
+			transition-property: grid-row, text-shadow;
+			transition-duration: 700ms, 150ms;
+			transition-timing-function: ease-in-out;
+			transition-delay: 200ms, 0;
+			text-shadow: 2px 2px 2px $darkBlue;
+			padding-inline: 1rem;
+		}
+
+		.content {
+			grid-row: 2/3;
+			grid-column: 1/-1;
+			z-index: 2;
+			opacity: 0;
+			transition-property: opacity;
+			transition-duration: 200ms;
+			transition-timing-function: ease-in-out;
+			padding-inline: 1rem;
+
+			p {
+				max-width: 80%;
+				color: $lightGrey;
+				padding-block: 1rem;
+			}
+		}
+
+		.links {
+			grid-row: 3/4;
+			grid-column: 1/-1;
+			align-self: flex-start;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			z-index: 2;
+			transition-property: grid-row;
+			transition-duration: 300ms;
+			transition-timing-function: ease-in-out;
+			padding-inline: 1rem;
+		}
+
+		.button {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			max-width: 80%;
+			opacity: 0;
+			color: $lightGrey;
+			transition-property: opacity, text-decoration-color;
+			transition-duration: 200ms;
+			transition-timing-function: ease-in-out;
+			text-decoration-color: transparent;
+
+			&:hover {
+				text-decoration-color: $lightGrey;
+				text-underline-offset: 3px;
+			}
+		}
+
+		&:hover {
+			.overlay {
+				height: 100%;
+				opacity: 0.7;
+			}
+
+			.h6 {
+				color: $lightGrey;
+				text-shadow: none;
+				grid-row: 1/2;
+			}
+
+			.content,
+			.button {
+				opacity: 1;
+				align-self: center;
+			}
+		}
+
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+			display: grid;
+		}
+	}
+
+	button {
+		grid-column: 2/3;
+		width: 100% !important;
+
+		@include btn-main($lightGrey, $darkBlue);
 	}
 }

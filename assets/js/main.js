@@ -41,3 +41,23 @@ const landingSlider = new Swiper(".landing-slider", {
 		pauseOnMouseHover: true,
 	},
 });
+
+// Portfolio Load More
+const loadmore = document.querySelector("#loadmore");
+let currentItems = 3;
+loadmore.addEventListener("click", (e) => {
+	const elementList = [
+		...document.querySelectorAll(".work-card-wrapper .card"),
+	];
+	for (let i = currentItems; i < currentItems + 3; i++) {
+		if (elementList[i]) {
+			elementList[i].style.display = "grid";
+		}
+	}
+
+	currentItems += 3;
+
+	if (currentItems >= elementList.length) {
+		event.target.style.display = "none";
+	}
+});

@@ -23,29 +23,37 @@
 
             <div class="col-wrapper">
                 <div class="left-col">
-                    <img src="assets/img/rob.jpeg" alt="Image of me from a previous job">
+                    <img src="assets/img/Rob.jpg" alt="Image of me from a previous job">
                 </div>
                 <div class="right-col">
-                    <h5 class="h6">
+                    <h4 class="h5">
                         <span class="quote">
                             <span class="fa-solid fa-quote-left"></span>
                             This industry can be frustrating and difficult at times, but out of all the jobs I
                             have ever had, I have experienced no greater satisfaction than when I am presented with a
                             challenging task, working through the problem and ultimately finding a solution that meets
-                            the
-                            clients needs and and brings them happiness-es pecially when it would be easier to find
+                            the clients needs and and brings them happiness especially when it would be easier to find
                             shortcuts.
                             <span class="fa-solid fa-quote-right"></span>
                         </span>
-                    </h5>
+                    </h4>
 
-                    <h6 class="section-sub-title">Things to know...</h6>
+                    <h4 class="h6 section-sub-title">Things to know...</h4>
                     <ul class="details-block">
-                        <li>Age: <span><?php echo date('Y') - '1994'; ?></span></li>
-                        <li>Years in the Industry: <span><?php echo date('Y') - '2018'; ?></span></li>
-                        <li>Town: <span>Bishop Auckland, UK</span></li>
-                        <li>Ability to drive: <span>Yes, with my own car</span></li>
-                        <li>Hobbies: <span>Building and Crafts, Music, Nature Walks, Mechanics, Photography, Late Night
+                        <li><span class="icon fa-solid fa-chevron-right"></span>Age: <span><?php
+                        $dob = '1994-10-08';
+                        echo date_diff(date_create($dob), date_create('today'))->y;
+                        ?></span>
+                        </li>
+                        <li><span class="icon fa-solid fa-chevron-right"></span>Years in the Industry:
+                            <span><?php echo date('Y') - '2018'; ?></span>
+                        </li>
+                        <li><span class="icon fa-solid fa-chevron-right"></span>Town: <span>Bishop Auckland, UK</span>
+                        </li>
+                        <li><span class="icon fa-solid fa-chevron-right"></span>Ability to drive: <span>Yes, with my own
+                                car</span></li>
+                        <li><span class="icon fa-solid fa-chevron-right"></span>Hobbies: <span>Building and Crafts,
+                                Music, Nature Walks, Mechanics, Photography, Late Night
                                 Drives</span>
                         </li>
                     </ul>

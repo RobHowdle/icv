@@ -20,32 +20,33 @@
     <nav class="nav-menu">
         <ul>
             <li>
-                <a id="sec-1" class="btn home" href="#home" aria-label="Link to the home section">
+                <a class="btn home" href="#home" aria-label="Link to the home section">
                     <i class="fa-solid fa-house"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a id="sec-2" class="btn about" href="#about" aria-label="Link to the about section">
+                <a class="btn about" href="#about" aria-label="Link to the about section">
                     <i class="fa-solid fa-user"></i>
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a id="sec-3" clas s="btn portfolio" href="#portfolio" aria-label="Link to the portfolio section">
+                <a class="btn portfolio" href="#portfolio" aria-label="Link to the portfolio section">
                     <i class="fa-solid fa-file"></i>
                     <span>Portfolio</span>
                 </a>
             </li>
             <li>
-                <a id="sec-4" class="btn outside" href="#outside" aria-label="Link to the outside of work section">
+                <a class="btn outside" href="#outside" aria-label="Link to the outside of work section">
                     <i class="fa-solid fa-person-hiking"></i>
                     <span>Outside of Work</span>
                 </a>
             </li>
             <li>
-                <a id="sec-5" class="btn achievements" href="#achievements">
-                    <i class="fa-solid fa-star"></i><span>Personal Achievements</span>
+                <a class="btn achievements" href="#achievements" aria-label="Link to the outside of work section">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Personal Achievements</span>
                 </a>
             </li>
         </ul>

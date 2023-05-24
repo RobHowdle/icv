@@ -86,6 +86,7 @@ nav.nav-menu {
 
 	a {
 		display: flex;
+		align-items: center;
 		gap: 2rem;
 
 		@include btn-nav-link($lightGrey);
