@@ -278,13 +278,18 @@ p {
 	grid-gap: 2rem;
 
 	.card {
-		height: 600px;
+		height: 0;
 		width: auto;
 		cursor: pointer;
 		box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 		text-decoration: none;
-		display: none;
+		display: grid;
+		visibility: hidden;
+		opacity: 0;
 		grid-template-rows: repeat(3, 1fr);
+		transition-property: visibility, height, opacity;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
 
 		.overlay {
 			grid-row: 1/-1;
@@ -396,7 +401,9 @@ p {
 		&:nth-child(1),
 		&:nth-child(2),
 		&:nth-child(3) {
-			display: grid;
+			visibility: visible;
+			opacity: 1;
+			height: 600px;
 		}
 	}
 

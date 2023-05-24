@@ -129,7 +129,7 @@
 
             <div class="card">
                 <div class="overlay"></div>
-                <img src="assets/img/portfolio/cards/wiki.webp" class="card-image" alt="Droid Builder Wiki">
+                <img src="assets/img/portfolio/cards/decorator.webp" class="card-image" alt="Kane Decorators">
                 <h5 class="h6 project-title">Kane Decorators</h5>
                 <div class="content">
                     <p>I developed an information wiki specifically designed for the Droid Builder Community. This wiki
@@ -149,7 +149,7 @@
 
             <div class="card">
                 <div class="overlay"></div>
-                <img src="assets/img/portfolio/cards/wiki.webp" class="card-image" alt="Droid Builder Wiki">
+                <img src="assets/img/portfolio/cards/greatlook.webp" class="card-image" alt="Great Look Design Studios">
                 <h5 class="h6 project-title">Great Look Design Studio</h5>
                 <div class="content">
                     <p>I developed an information wiki specifically designed for the Droid Builder Community. This wiki

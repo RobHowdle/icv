@@ -51,13 +51,17 @@ loadmore.addEventListener("click", (e) => {
 	];
 	for (let i = currentItems; i < currentItems + 3; i++) {
 		if (elementList[i]) {
-			elementList[i].style.display = "grid";
+			elementList[i].style.visibility = "visible";
+			elementList[i].style.opacity = "1";
+			elementList[i].style.height = "600px";
 		}
 	}
 
 	currentItems += 3;
 
 	if (currentItems >= elementList.length) {
-		event.target.style.display = "none";
+		event.target.style.visibility = "hidden";
+		event.target.style.opacity = "0";
+		event.target.style.height = "0px";
 	}
 });
