@@ -87,6 +87,14 @@
 }
 
 .single-section {
+	min-height: 100vh;
+
+	&--pi-2 {
+		padding-inline: 2rem;
+	}
+}
+
+.text-image {
 	&--pi-2 {
 		padding-inline: 2rem;
 	}
@@ -278,15 +286,14 @@ p {
 	grid-gap: 2rem;
 
 	.card {
-		// height: 0;
-		height: 600px;
+		height: 0;
 		width: auto;
 		cursor: pointer;
 		box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 		text-decoration: none;
 		display: grid;
-		// visibility: hidden;
-		// opacity: 0;
+		visibility: hidden;
+		opacity: 0;
 		grid-template-rows: repeat(3, 1fr);
 		transition-property: visibility, height, opacity;
 		transition-duration: 300ms;

@@ -40,19 +40,25 @@
 
                     <h4 class="h6 section-sub-title">Things to know...</h4>
                     <ul class="details-block">
-                        <li><span class="icon fa-solid fa-chevron-right"></span>Age: <span><?php
-                        $dob = '1994-10-08';
-                        echo date_diff(date_create($dob), date_create('today'))->y;
-                        ?></span>
+                        <li>
+                            <span class="icon fa-solid fa-chevron-right"></span>Age: <span><?php
+                            $dob = '1994-10-08';
+                            echo date_diff(date_create($dob), date_create('today'))->y;
+                            ?></span>
                         </li>
-                        <li><span class="icon fa-solid fa-chevron-right"></span>Years in the Industry:
+                        <li>
+                            <span class="icon fa-solid fa-chevron-right"></span>Years in the Industry:
                             <span><?php echo date('Y') - '2018'; ?></span>
                         </li>
-                        <li><span class="icon fa-solid fa-chevron-right"></span>Town: <span>Bishop Auckland, UK</span>
+                        <li>
+                            <span class="icon fa-solid fa-chevron-right"></span>Town: <span>Bishop Auckland, UK</span>
                         </li>
-                        <li><span class="icon fa-solid fa-chevron-right"></span>Ability to drive: <span>Yes, with my own
-                                car</span></li>
-                        <li><span class="icon fa-solid fa-chevron-right"></span>Hobbies: <span>Building and Crafts,
+                        <li>
+                            <span class="icon fa-solid fa-chevron-right"></span>Ability to drive: <span>Yes, with my own
+                                car</span>
+                        </li>
+                        <li>
+                            <span class="icon fa-solid fa-chevron-right"></span>Hobbies: <span>Building and Crafts,
                                 Music, Nature Walks, Mechanics, Photography, Late Night
                                 Drives</span>
                         </li>

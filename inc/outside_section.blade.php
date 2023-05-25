@@ -1,5 +1,5 @@
-<section id="outside" data-link="outside" class="single-section">
-    <div class="single-section--pi-2">
+<div id="outside" data-link="outside" class="single-section">
+    <div class="text-image--pi-2 lg-bg">
         <div class="inner-wrapper--1680">
             <h6 class="h3 section-title">Outside of Work</h6>
             <p>When I’m not at work, I enjoy keeping busy. I have a strong passion for learning new things, which drives
@@ -12,9 +12,10 @@
             </p>
         </div>
     </div>
-    <div class="single-section--pi-2 lg-bg">
+
+    <div class="text-image--pi-2 lg-bg">
         <div class="inner-wrapper--1680">
-            <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="activities-block text-image--pi-4 col-wrapper">
                 <div class="left-col">
                     <h6 class="h5">Droid Building</h6>
                     <p>In 2011, I stumbled upon the Droid Building Community, a global gathering of Star Wars fans who
@@ -38,10 +39,9 @@
         </div>
     </div>
 
-
-    <div class="single-section--pi-2">
+    <div class="text-image--pi-2">
         <div class="inner-wrapper--1680">
-            <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="activities-block text-image--pi-4 col-wrapper">
                 <div class="col-left">
                     <img class="col-image" src="assets/img/achievements/rob_music.png"
                         alt="A picture of me performing with an old band at The Forum Music Center">
@@ -70,9 +70,9 @@
         </div>
     </div>
 
-    <div class="single-section--pi-2 lg-bg">
+    <div class="text-image--pi-2 lg-bg">
         <div class="inner-wrapper--1680">
-            <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="activities-block text-image--pi-4 col-wrapper">
                 <div class="col-left">
                     <h6 class="h5">Personal Projects</h6>
                     <p>
@@ -101,9 +101,9 @@
         </div>
     </div>
 
-    <div class="single-section--pi-2">
+    <div class="text-image--pi-2">
         <div class="inner-wrapper--1680">
-            <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="activities-block text-image--pi-4 col-wrapper">
                 <div class="col-left">
                     <img class="col-image" src="assets/img/achievements/charity.png"
                         alt="A picture of me performing with an old band at The Forum Music Center">
@@ -137,9 +137,12 @@
         </div>
     </div>
 
-    <div class="single-section--pi-2 lg-bg">
+
+
+
+    <div class="text-image--pi-2 lg-bg">
         <div class="inner-wrapper--1680">
-            <div class="activities-block single-section--pi-4 col-wrapper">
+            <div class="activities-block text-image--pi-4 col-wrapper">
                 <div class="col-left">
                     <h6 class="h5">Exploring</h6>
                     <p>
@@ -163,4 +166,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

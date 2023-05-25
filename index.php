@@ -7,7 +7,7 @@
 
 <body>
     <div class="wrapper">
-        <?php include 'inc/navigation.blade.php'; ?>
+        <?php include ('inc/navigation.blade.php'); ?>
 
         <div class="container">
             <?php include ('inc/landing_slider.blade.php'); ?>
@@ -16,7 +16,8 @@
             <?php include ('inc/outside_section.blade.php'); ?>
         </div>
 
-        <?php include 'inc/footer.blade.php'; ?>
+        <?php include ('inc/footer.blade.php'); ?>
+    </div>
 </body>
 
 </html>

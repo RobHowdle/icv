@@ -40,7 +40,7 @@
             <li>
                 <a class="btn outside" href="#outside" aria-label="Link to the outside of work section">
                     <i class="fa-solid fa-person-hiking"></i>
-                    <span>Outside of Work</span>
+                    <span>Outside</span>
                 </a>
             </li>
         </ul>
