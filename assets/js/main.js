@@ -43,10 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Landing Slider
 const landingSlider = new Swiper(".landing-slider", {
-	slidesPerView: 2,
+	slidesPerView: 1,
 	spaceBetween: 20,
 	loop: true,
 	speed: 5000,
+	breakpoints: {
+		576: {
+			slidesPerView: 2,
+		},
+	},
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -79,4 +84,11 @@ loadmore.addEventListener("click", (e) => {
 		event.target.style.opacity = "0";
 		event.target.style.height = "0px";
 	}
+});
+
+// Mobile Nav
+$(document).ready(function () {
+	$(".mobile-nav-toggle").click(function () {
+		$(".header-mobile").toggleClass("active");
+	});
 });

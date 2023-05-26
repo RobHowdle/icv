@@ -45,5 +45,51 @@
             </li>
         </ul>
     </nav>
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+</div>
+
+<div class="header-mobile dg-bg">
+    <div class="left-col">
+        <a href="/home">
+            <img src="assets/img/rob-moji.PNG" alt="My Moji">
+        </a>
+    </div>
+
+    <div class="center-col">
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a class="btn home" href="#home" aria-label="Link to the home section">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn about" href="#about" aria-label="Link to the about section">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn portfolio" href="#portfolio" aria-label="Link to the portfolio section">
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn outside" href="#outside" aria-label="Link to the outside of work section">
+                        <span>Outside</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="tel:07305988990" aria-label="Call me at 07305988990">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:robhowdle94@gmail.com" aria-label="Email me at robhowdle94@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/RobHowdle" target="_blank" aria-label="View my Github Profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
 </div>

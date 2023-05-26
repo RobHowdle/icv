@@ -422,3 +422,36 @@ p {
 		@include btn-main($lightGrey, $darkBlue);
 	}
 }
+
+// @media only screen and (max-width: 1920px) {}
+
+// @media only screen and (max-width: 1680px) {}
+
+// @media only screen and (max-width: 1366px) {}
+
+// @media only screen and (max-width: 1199px) {}
+
+// @media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+	p {
+		padding-block: 1rem;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.single-section--pi-2 {
+		padding-inline: 1rem;
+	}
+
+	.section-title {
+		padding-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.slider-buttons-wrapper .swiper-button-prev {
+		right: unset;
+		left: 0;
+	}
+}

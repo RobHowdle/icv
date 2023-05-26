@@ -72,3 +72,46 @@ p,
 .p {
 	font-size: rem(18);
 }
+
+// @media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1680px) {
+	h1,
+	.h1 {
+		font-size: rem(60);
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	h3,
+	.h3 {
+		font-size: rem(45);
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	h3,
+	.h3 {
+		font-size: rem(30);
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	h3,
+	.h3 {
+		font-size: rem(35);
+		letter-spacing: rem(4);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	h3,
+	.h3 {
+		font-size: rem(30);
+		letter-spacing: rem(3);
+	}
+}
+
+// @media only screen and (max-width: 575px) {}
+
+// @media only screen and (max-width: 360px) {}

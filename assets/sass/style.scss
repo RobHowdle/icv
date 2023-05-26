@@ -71,3 +71,45 @@ ul {
 .lg-bg {
 	background-color: $lightGrey;
 }
+
+.dg-bg {
+	background-color: $darkGrey;
+}
+
+// @media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1680px) {
+	.wrapper {
+		grid-template-columns: 0.25fr 0.75fr;
+	}
+}
+
+// @media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1199px) {
+	.wrapper {
+		grid-template-columns: 0.35fr 0.65fr;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+	.wrapper {
+		grid-template-columns: 1fr;
+
+		.container {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.inner-wrapper--1680 {
+		padding-block: 1rem;
+	}
+}
+
+// @media only screen and (max-width: 360px) {}

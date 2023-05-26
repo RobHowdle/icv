@@ -4,9 +4,8 @@
         <p>
             I have had the pleasure of working on some fantastic projects during my career and I have listed some of my
             favourites below. Some of my projects were created during employment with various companies therefore I have
-            linked to the companies website to get a full overview of the project. I thank my previous companies for
-            allowed
-            me to share this work on my website.
+            linked to the companies website to get a full overview of the project. I would like to thank my previous
+            companies for allowing me to share this work on my website.
         </p>
         <div class="swiper landing-slider">
             <div class="swiper-wrapper">
