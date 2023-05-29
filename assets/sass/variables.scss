@@ -87,12 +87,23 @@ p,
 	.h3 {
 		font-size: rem(45);
 	}
+
+	h5,
+	.h5 {
+		font-size: rem(23);
+	}
 }
 
 @media only screen and (max-width: 1199px) {
 	h3,
 	.h3 {
 		font-size: rem(30);
+	}
+
+	h5,
+	.h5 {
+		font-size: rem(21);
+		letter-spacing: rem(3);
 	}
 }
 

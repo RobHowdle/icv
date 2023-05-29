@@ -90,6 +90,12 @@ ul {
 	.wrapper {
 		grid-template-columns: 0.35fr 0.65fr;
 	}
+
+	.inner-wrapper {
+		&--1680-lg {
+			padding-block: 2rem;
+		}
+	}
 }
 
 @media only screen and (max-width: 991px) {
