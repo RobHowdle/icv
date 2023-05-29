@@ -87,8 +87,6 @@
 }
 
 .single-section {
-	min-height: 100vh;
-
 	&--pi-2 {
 		padding-inline: 2rem;
 	}
@@ -222,6 +220,86 @@ p {
 		object-position: start;
 	}
 
+	&--outside {
+		display: grid;
+
+		.left-col {
+			grid-column: 1/2;
+			place-self: center;
+
+			@supports not (aspect-ratio: 1/1) {
+				position: relative;
+
+				&::before {
+					content: "";
+					display: block;
+					padding-top: calc((400 / 600) * 100%);
+				}
+
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					inset: 0;
+					object-fit: cover;
+				}
+			}
+
+			@supports (aspect-ratio: 1/1) {
+				img {
+					aspect-ratio: 600/400;
+					height: auto;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+
+			img {
+				box-shadow: none;
+			}
+		}
+
+		.right-col {
+			grid-column: 2/3;
+			place-self: center;
+
+			.section-sub-title {
+				margin-top: 2rem;
+			}
+		}
+
+		@supports not (aspect-ratio: 1/1) {
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+				padding-top: calc((300 / 500) * 100%);
+			}
+
+			.col-image {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				inset: 0;
+				object-fit: cover;
+			}
+		}
+
+		@supports (aspect-ratio: 1/1) {
+			.col-image {
+				aspect-ratio: 500/300;
+				height: auto;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.col-image--top {
+			object-position: start;
+		}
+	}
+
 	&--desktop {
 		display: grid;
 
@@ -286,6 +364,10 @@ p {
 
 .activities-block {
 	margin-top: 3rem;
+
+	&:nth-child(1) {
+		margin-top: 0;
+	}
 
 	.h5 {
 		font-weight: 500;
@@ -461,9 +543,17 @@ p {
 
 // @media only screen and (max-width: 1920px) {}
 
-// @media only screen and (max-width: 1680px) {}
+@media only screen and (max-width: 1680px) {
+	.text-image--pi-4 {
+		padding-inline: 3rem;
+	}
+}
 
 @media only screen and (max-width: 1366px) {
+	.activities-block .col-wrapper--desktop {
+		display: grid !important;
+	}
+
 	.col-wrapper {
 		&--desktop {
 			display: none;
@@ -491,11 +581,33 @@ p {
 	.work-card-wrapper .card .content {
 		max-height: 450px;
 	}
+
+	.text-image--pi-4 {
+		padding-inline: 2rem;
+	}
 }
 
 @media only screen and (max-width: 1199px) {
 	.col-wrapper {
 		grid-gap: 2rem;
+
+		&--outside {
+			grid-template-columns: 1fr;
+			grid-gap: 1rem 0;
+
+			.left-col,
+			.right-col {
+				grid-column: 1/3;
+			}
+
+			.left-col {
+				grid-row: 2/3;
+			}
+
+			.right-col {
+				grid-row: 1/2;
+			}
+		}
 	}
 
 	.work-card-wrapper {
@@ -506,6 +618,26 @@ p {
 			grid-column: 1/2;
 		}
 	}
+
+	.text-image--pi-4 {
+		padding-inline: 1rem;
+	}
+
+	.text-image--pi-2:nth-child(1) .inner-wrapper--1680 {
+		padding-bottom: 0;
+	}
+
+	.text-image--pi-2:nth-child(odd):not(:nth-child(1)) {
+		.col-wrapper--outside {
+			.left-col {
+				grid-row: 1/2;
+			}
+
+			.right-col {
+				grid-row: 2/3;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -513,16 +645,16 @@ p {
 		&--tablet {
 			grid-template-columns: 1fr;
 			grid-gap: 2rem 0;
-		}
 
-		.left-col {
-			grid-row: 1/2;
-			grid-column: 1/2;
-		}
+			.left-col {
+				grid-row: 1/2;
+				grid-column: 1/2;
+			}
 
-		.right-col {
-			grid-row: 2/3;
-			grid-column: 1/2;
+			.right-col {
+				grid-row: 2/3;
+				grid-column: 1/2;
+			}
 		}
 	}
 
@@ -539,6 +671,10 @@ p {
 	.work-card-wrapper .card .content {
 		max-height: 350px;
 	}
+
+	.text-image--pi-4 {
+		padding-inline: 0;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -549,10 +685,21 @@ p {
 	.col-wrapper .left-col img {
 		max-width: 550px;
 	}
+
+	.col-wrapper--outside {
+		.left-col,
+		.right-col {
+			display: block;
+		}
+	}
 }
 
 @media only screen and (max-width: 575px) {
 	.single-section--pi-2 {
+		padding-inline: 1rem;
+	}
+
+	.text-image--pi-2 {
 		padding-inline: 1rem;
 	}
 
