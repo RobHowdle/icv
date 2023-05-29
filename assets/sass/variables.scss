@@ -92,6 +92,11 @@ p,
 	.h5 {
 		font-size: rem(23);
 	}
+
+	p,
+	.p {
+		font-size: rem(16);
+	}
 }
 
 @media only screen and (max-width: 1199px) {

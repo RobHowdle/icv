@@ -12,6 +12,7 @@
         <div class="container">
             <?php include ('inc/landing_slider.blade.php'); ?>
             <?php include ('inc/about_section.blade.php'); ?>
+            <?php include ('inc/portfolio_section.blade.php'); ?>
         </div>
 
         <?php include ('inc/footer.blade.php'); ?>

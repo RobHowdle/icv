@@ -92,3 +92,23 @@ $(document).ready(function () {
 		$(".header-mobile").toggleClass("active");
 	});
 });
+
+// Assigning unique ID's to Portfolio Cards
+document.addEventListener("DOMContentLoaded", () => {
+	const cards = document.querySelectorAll(".work-card-wrapper .card");
+	const modals = document.querySelectorAll(".portfolio-modal");
+
+	cards.forEach((card, index) => {
+		const cardNumber = index + 1;
+		const button = card.querySelector(".btn");
+
+		console.log(button);
+
+		button.dataset.target = `portfolio-modal-${cardNumber}`;
+	});
+
+	modals.forEach((modal, counter) => {
+		const modalNumber = counter + 1;
+		modal.id = `portfolio-modal-${modalNumber}`;
+	});
+});
