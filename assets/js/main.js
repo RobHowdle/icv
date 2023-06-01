@@ -2,7 +2,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(
 		(entries) => {
-			const navLinks = document.querySelectorAll(".header .nav-menu ul li a");
+			const navLinks = document.querySelectorAll(
+				".header .nav-menu ul li a"
+			);
 
 			navLinks.forEach((navLink) => {
 				navLink.classList.remove("active");
@@ -14,14 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			entries.forEach((entry) => {
 				const ref = entry.target.dataset.link;
-				const link = document.querySelector(`.header .nav-menu ul li a.${ref}`);
+				const link = document.querySelector(
+					`.header .nav-menu ul li a.${ref}`
+				);
 				const intersecting =
 					entry.isIntersecting && entry.intersectionRatio >= 0.5;
 
 				if (
 					link &&
 					(intersecting ||
-						(entry.target === lastSection && isLastSectionIntersecting))
+						(entry.target === lastSection &&
+							isLastSectionIntersecting))
 				) {
 					link.classList.add("active");
 				}
@@ -102,8 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		const cardNumber = index + 1;
 		const button = card.querySelector(".btn");
 
-		console.log(button);
-
 		button.dataset.target = `portfolio-modal-${cardNumber}`;
 	});
 
@@ -112,3 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		modal.id = `portfolio-modal-${modalNumber}`;
 	});
 });
+
+// Loading Spinner
+// document.onreadystatechange = function () {
+// 	if()
+// }

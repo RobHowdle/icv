@@ -151,14 +151,14 @@ function truncateText($text, $limit)
         <div class="content">
           <p class="content">
             <?php
-            $text = 'I developed an information wiki specifically designed for the Droid Builder Community. This wiki serves as a centralised hub, compiling extensive information on droid building and making it easily accessible. Utilising the open-source Media Wiki platform with custom styling, I created a user-friendly environment where individuals can create accounts, contribute to and update various pages with relevant information, and access helpful resources such as purchase links for parts and tutorials. The primary objective of this wiki is to assist new builders in navigating the intricacies of this complex hobby, simplifying their journey.';
+            $text = 'During my tenure at Discovery Design, I developed this website that effectively reflects the essence of the company. Unlike standard brochure websites, this project went beyond technical functionality. By leveraging the power of the Wordpress CMS and utilising Custom Post Types for archive pages and dedicated service pages, I ensure that all the facets of the company were prominently showcased for prospective customers. To enhance the user experience, I implemented contact forms that dynamically pre-populated based on the selected service and the specific page the user was visiting. This thoughtful feature contributed to a seamless and enjoyable user experience.';
             
             echo truncateText($text, 200);
             ?>
           </p>
         </div>
         <div class="links">
-          <a class="button" href="https://wiki.robsrobots.co.uk/wiki/index.php/Main_Page" target="_blank">View
+          <a class="button" href="https://kanedecorators.co.uk/" target="_blank">View
             <span class="fa-solid fa-chevron-right"></span>
           </a>
         </div>
