@@ -16,6 +16,7 @@
             <?php include ('inc/outside_section.blade.php'); ?>
         </div>
 
+        <div class="portfolio-modal-backdrop fade"></div>
         <?php include ('inc/footer.blade.php'); ?>
     </div>
 </body>

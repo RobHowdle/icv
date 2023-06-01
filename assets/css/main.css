@@ -1079,6 +1079,72 @@ ul {
   background-color: #040b14;
 }
 
+.portfolio-modal-backdrop {
+  background-color: #040b14;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-modal-backdrop.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+.portfolio-modal-backdrop .fade {
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.portfolio-modal {
+  --backdrop-colour: rgba(64, 64, 64, 0.5);
+  --modal-text-color: $lightGrey;
+  --edge-spacing-block: 1rem;
+  --edge-spacing-inline: 1rem;
+  --padding-block: 1rem;
+  --padding-inline: 1rem;
+  background-color: var(--backdrop-color);
+  color: var(--modal-text-color);
+  inset: 0;
+  overflow: auto;
+  padding-block: var(--edge-spacing-block);
+  padding-inline: var(--edge-spacing-inline);
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1041;
+  transition-property: opacity, visibility;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+  margin: auto;
+  max-width: 70%;
+}
+.portfolio-modal .modal-content {
+  background-color: #149ddd;
+  color: #040b14;
+  display: flex;
+  flex-direction: column;
+  background-clip: padding-box;
+  width: 100%;
+  position: relative;
+  outline: 0;
+  pointer-events: auto;
+  padding: 3rem;
+}
+
 @media only screen and (max-width: 1680px) {
   .wrapper {
     grid-template-columns: 0.25fr 0.75fr;

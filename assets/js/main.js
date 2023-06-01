@@ -102,21 +102,54 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", () => {
 	const cards = document.querySelectorAll(".work-card-wrapper .card");
 	const modals = document.querySelectorAll(".portfolio-modal");
+	let button;
+	let title;
 
 	cards.forEach((card, index) => {
 		const cardNumber = index + 1;
 		const button = card.querySelector(".btn");
-
+		const contentList = card.querySelectorAll("p.content");
+		const title = card.querySelector(".h6");
 		button.dataset.target = `portfolio-modal-${cardNumber}`;
+
+		// Giving each p.content div the card number id
+		contentList.forEach((content) => {
+			content.classList.add(`content-${cardNumber}`);
+		});
+
+		button.addEventListener("click", () => {
+			const targetModalId = button.dataset.target;
+			const targetModal = document.getElementById(targetModalId);
+			const backdrop = document.querySelector(
+				".portfolio-modal-backdrop"
+			);
+
+			backdrop.classList.toggle("show");
+			targetModal.classList.toggle("show");
+
+			console.log(targetModal, title);
+		});
 	});
 
 	modals.forEach((modal, counter) => {
 		const modalNumber = counter + 1;
 		modal.id = `portfolio-modal-${modalNumber}`;
 	});
-});
 
-// Loading Spinner
-// document.onreadystatechange = function () {
-// 	if()
-// }
+	document.addEventListener("keydown", (event) => {
+		if (event.key === "Escape") {
+			const openModal = document.querySelector(".portfolio-modal.show");
+			const backdrop = document.querySelector(
+				".portfolio-modal-backdrop.show"
+			);
+
+			if (openModal) {
+				openModal.classList.remove("show");
+			}
+
+			if (backdrop) {
+				backdrop.classList.remove("show");
+			}
+		}
+	});
+});
