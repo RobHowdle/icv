@@ -226,6 +226,13 @@ function truncateText($text, $limit)
     </div>
 
     <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
