@@ -140,11 +140,21 @@ ul {
 		display: flex;
 		flex-direction: column;
 		background-clip: padding-box;
-		width: 100%;
+		width: auto;
 		position: relative;
 		outline: 0;
 		pointer-events: auto;
 		padding: 3rem;
+
+		.modal-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.close {
+				cursor: pointer;
+			}
+		}
 	}
 }
 

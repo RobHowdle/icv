@@ -2,7 +2,7 @@
 	position: sticky;
 	top: 0;
 	align-self: start;
-	background: url("../img/background.jpg") rgba(4, 11, 20, 0.7);
+	background: url("../img/background.webp") rgba(4, 11, 20, 0.7);
 	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
@@ -21,6 +21,7 @@
 		max-height: 300px;
 		aspect-ratio: 1/1;
 		object-fit: cover;
+		object-position: top;
 		margin: 1rem auto;
 		border-color: $medGrey;
 		border-style: solid;
@@ -181,10 +182,8 @@ nav.nav-menu {
 			border-radius: 50%;
 			cursor: pointer;
 			background-color: $lightBlue;
-
-			&:hover {
-			}
 		}
+
 		img {
 			max-width: 150px;
 			height: 100%;

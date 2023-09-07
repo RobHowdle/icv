@@ -166,7 +166,7 @@ p,
   position: sticky;
   top: 0;
   align-self: start;
-  background: url("../img/background.jpg") rgba(4, 11, 20, 0.7);
+  background: url("../img/background.webp") rgba(4, 11, 20, 0.7);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -185,6 +185,7 @@ p,
   max-height: 300px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: top;
   margin: 1rem auto;
   border-color: #2c2f3f;
   border-style: solid;
@@ -1138,11 +1139,19 @@ ul {
   display: flex;
   flex-direction: column;
   background-clip: padding-box;
-  width: 100%;
+  width: auto;
   position: relative;
   outline: 0;
   pointer-events: auto;
   padding: 3rem;
+}
+.portfolio-modal .modal-content .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-modal .modal-content .modal-header .close {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1680px) {

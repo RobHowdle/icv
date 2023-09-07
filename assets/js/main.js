@@ -102,15 +102,15 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", () => {
 	const cards = document.querySelectorAll(".work-card-wrapper .card");
 	const modals = document.querySelectorAll(".portfolio-modal");
-	let button;
-	let title;
 
 	cards.forEach((card, index) => {
 		const cardNumber = index + 1;
 		const button = card.querySelector(".btn");
 		const contentList = card.querySelectorAll("p.content");
 		const title = card.querySelector(".h6");
-		button.dataset.target = `portfolio-modal-${cardNumber}`;
+		const modalId = `portfolio-modal-${cardNumber}`;
+
+		button.dataset.target = `#${modalId}`;
 
 		// Giving each p.content div the card number id
 		contentList.forEach((content) => {
@@ -118,37 +118,61 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 
 		button.addEventListener("click", () => {
-			const targetModalId = button.dataset.target;
-			const targetModal = document.getElementById(targetModalId);
+			const targetModal = document.getElementById(modalId);
 			const backdrop = document.querySelector(
 				".portfolio-modal-backdrop"
 			);
 
-			backdrop.classList.toggle("show");
-			targetModal.classList.toggle("show");
+			if (targetModal) {
+				backdrop.classList.add("show");
+				targetModal.classList.add("show");
+				const content = button.getAttribute("data-text");
 
-			console.log(targetModal, title);
+				const modalTitle = targetModal.querySelector(
+					".modal-header h2.h5"
+				);
+				const modalText = targetModal.querySelector(".modal-text p");
+
+				if (modalTitle) {
+					modalTitle.innerHTML = title.innerHTML;
+				}
+
+				if (modalText) {
+					modalText.innerHTML = content;
+				}
+			}
 		});
 	});
 
 	modals.forEach((modal, counter) => {
 		const modalNumber = counter + 1;
-		modal.id = `portfolio-modal-${modalNumber}`;
+		const modalId = `portfolio-modal-${modalNumber}`;
+		modal.id = modalId;
+
+		const closeBtn = modal.querySelector(
+			`#${modalId} .modal-header .close`
+		);
+		closeBtn.addEventListener("click", () => {
+			console.log("click");
+			modal.classList.remove("show");
+			document
+				.querySelector(".portfolio-modal-backdrop")
+				.classList.remove("show");
+		});
 	});
 
-	document.addEventListener("keydown", (event) => {
+	document.addEventListener("keyup", (event) => {
 		if (event.key === "Escape") {
-			const openModal = document.querySelector(".portfolio-modal.show");
 			const backdrop = document.querySelector(
-				".portfolio-modal-backdrop.show"
+				".portfolio-modal-backdrop"
+			);
+			const visibleModal = document.querySelector(
+				".portfolio-modal.show"
 			);
 
-			if (openModal) {
-				openModal.classList.remove("show");
-			}
-
-			if (backdrop) {
+			if (backdrop && visibleModal) {
 				backdrop.classList.remove("show");
+				visibleModal.classList.remove("show");
 			}
 		}
 	});

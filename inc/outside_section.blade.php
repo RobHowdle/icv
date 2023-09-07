@@ -24,7 +24,7 @@
           </p>
         </div>
         <div class="right-col">
-          <img class="col-image" src="assets/img/achievements/r2uk2019.jpeg"
+          <img class="col-image" src="assets/img/achievements/r2uk2019.webp"
             alt="Droid Builders Gathering Group Photo - R2UK 2019">
         </div>
       </div>
@@ -35,7 +35,7 @@
     <div class="inner-wrapper--1680">
       <div class="activities-block text-image--pi-4 col-wrapper col-wrapper--outside">
         <div class="left-col">
-          <img class="col-image" src="assets/img/achievements/rob_music.png"
+          <img class="col-image" src="assets/img/achievements/rob_music.webp"
             alt="A picture of me performing with an old band at The Forum Music Center">
         </div>
         <div class="right-col">
@@ -70,8 +70,7 @@
           </p>
         </div>
         <div class="right-col">
-          <img class="col-image" src="assets/img/achievements/projects.png"
-            alt="A picture of me performing with an old band at The Forum Music Center">
+          <img class="col-image" src="assets/img/achievements/projects.webp" alt="Various Projects I have done">
         </div>
       </div>
     </div>
@@ -81,8 +80,8 @@
     <div class="inner-wrapper--1680">
       <div class="activities-block text-image--pi-4 col-wrapper col-wrapper--outside">
         <div class="left-col">
-          <img class="col-image" src="assets/img/achievements/charity.png"
-            alt="A picture of me performing with an old band at The Forum Music Center">
+          <img class="col-image" src="assets/img/achievements/charity.webp"
+            alt="A collage image of charity events I've done">
         </div>
         <div class="right-col">
           <h6 class="h5">Charity Work</h6>
@@ -133,8 +132,8 @@
           </p>
         </div>
         <div class="right-col">
-          <img class="col-image" src="assets/img/achievements/exploring.png"
-            alt="A picture of me performing with an old band at The Forum Music Center">
+          <img class="col-image" src="assets/img/achievements/exploring.webp"
+            alt="A collage of pictures taken when I have been outside exploring">
         </div>
       </div>
     </div>

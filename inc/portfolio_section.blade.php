@@ -7,7 +7,7 @@ function truncateText($text, $limit)
         $truncatedText = mb_substr($text, 0, $limit);
         $lastSpace = mb_strrpos($truncatedText, ' ');
         $truncatedText = mb_substr($truncatedText, 0, $lastSpace);
-        $truncatedText .= '... <button aria-label="Read More" class="btn" type="button">Read More</button>';
+        $truncatedText .= '... <button aria-label="Read More" class="btn" type="button" data-text="' . $text . '">Read More</button>';
         return $truncatedText;
     }
 }
@@ -34,7 +34,7 @@ function truncateText($text, $limit)
         <div class="content">
           <p class="content">
             <?php
-            $text = 'At Discovery Design, I created a website for a recruitment company using Wordpress CMS, Custom Post Types, Vue Components and custom Gravity Forms. Overcoming challenges, I successfully implemented the desired functionality. The use of flexible content empowered clients to customise their site across multiple pages, surpassing initial design limitations';
+            $text = 'At Discovery Design, I created a website for a recruitment company using Wordpress CMS, Custom Post Types, Vue Components and custom Gravity Forms. Overcoming challenges, I successfully implemented the desired functionality. The use of flexible content empowered clients to customise their site across multiple pages, surpassing initial design limitations.';
             echo truncateText($text, 200);
             ?>
           </p>
@@ -48,7 +48,7 @@ function truncateText($text, $limit)
 
       <div class="card">
         <div class="overlay"></div>
-        <img src="assets/img/portfolio/cards/checklist.jpg" class="card-image" alt="Printed Parts Checklist">
+        <img src="assets/img/portfolio/cards/checklist.webp" class="card-image" alt="Printed Parts Checklist">
         <h5 class="h6 project-title">Printed Parts Checklist</h5>
         <div class="content">
           <p class="content">
@@ -108,7 +108,7 @@ function truncateText($text, $limit)
 
       <div class="card">
         <div class="overlay"></div>
-        <img src="assets/img/portfolio/cards/victoriahotel.jpeg" class="card-image" alt="Victoria Hotel">
+        <img src="assets/img/portfolio/cards/victoriahotel.webp" class="card-image" alt="Victoria Hotel">
         <h5 class="h6 project-title">Victoria Hotel</h5>
         <div class="content">
           <p class="content">
@@ -166,7 +166,7 @@ function truncateText($text, $limit)
 
       <div class="card">
         <div class="overlay"></div>
-        <img src="assets/img/portfolio/cards/jrb.jpg" class="card-image" alt="JRB Charted Surveyors">
+        <img src="assets/img/portfolio/cards/jrb.webp" class="card-image" alt="JRB Charted Surveyors">
         <h5 class="h6 project-title">JRB Charted Surveyors</h5>
         <div class="content">
           <p class="content">
@@ -185,7 +185,7 @@ function truncateText($text, $limit)
 
       <div class="card">
         <div class="overlay"></div>
-        <img src="assets/img/portfolio/cards/vanfit.jpeg" class="card-image" alt="Vanfit Solutions">
+        <img src="assets/img/portfolio/cards/vanfit.webp" class="card-image" alt="Vanfit Solutions">
         <h5 class="h6 project-title">Vanfit Solutions</h5>
         <div class="content">
           <p class="content">
@@ -204,7 +204,7 @@ function truncateText($text, $limit)
 
       <div class="card">
         <div class="overlay"></div>
-        <img src="assets/img/portfolio/cards/paradise.jpeg" class="card-image" alt="Paradise School, Goa">
+        <img src="assets/img/portfolio/cards/paradise.webp" class="card-image" alt="Paradise School, Goa">
         <h5 class="h6 project-title">Paradise School, Goa</h5>
         <div class="content">
           <p class="contents">
@@ -230,6 +230,127 @@ function truncateText($text, $limit)
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade portfolio-modal" id="" tab-index="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5"></h2>
+            <i class="fa-solid fa-x close"></i>
+          </div>
+          <div class="modal-text">
+            <p></p>
           </div>
         </div>
       </div>
